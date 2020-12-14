@@ -122,11 +122,11 @@ namespace ClearCanvas.Desktop.Help
             this._manifest.AutoSize = true;
             this._manifest.BackColor = System.Drawing.Color.Transparent;
             this._manifest.ForeColor = System.Drawing.Color.Firebrick;
-            this._manifest.Location = new System.Drawing.Point(447, 331);
+            this._manifest.Location = new System.Drawing.Point(408, 340);
             this._manifest.Name = "_manifest";
-            this._manifest.Size = new System.Drawing.Size(217, 13);
+            this._manifest.Size = new System.Drawing.Size(251, 13);
             this._manifest.TabIndex = 7;
-            this._manifest.Text = "Warning: This installation has been modified.";
+            this._manifest.Text = "Warning: This installation has been modified by JRX";
             // 
             // AboutForm
             // 

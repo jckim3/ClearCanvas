@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClearCanvas.Dicom", "ClearCanvas.Dicom.csproj", "{AD9ECE2B-8268-4115-8DC8-860FBD011FFF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClearCanvas.Dicom.Samples", "Samples\ClearCanvas.Dicom.Samples.csproj", "{F861DCC5-2BC0-4B8B-8DCD-656A3206E2A0}"
@@ -17,6 +19,18 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClearCanvas.Dicom.DataDictionaryGenerator", "DataDictionaryGenerator\ClearCanvas.Dicom.DataDictionaryGenerator.csproj", "{BFB50CA0-87D7-4228-999B-9E2E5CEB38B1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClearCanvas.Dicom.DicomDump", "DicomDump\ClearCanvas.Dicom.DicomDump.csproj", "{C9F71CD6-84E8-461F-A0A6-F7C359F0A6D1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8BAE0115-0959-4AF8-82AD-7F599D5850AC} = {8BAE0115-0959-4AF8-82AD-7F599D5850AC}
+		{B389F627-F243-4B7E-8A04-90E1071B2754} = {B389F627-F243-4B7E-8A04-90E1071B2754}
+		{F6EAD428-E6CF-4DF6-B2F3-D33D532C5343} = {F6EAD428-E6CF-4DF6-B2F3-D33D532C5343}
+		{FC264853-24DF-4E17-BC69-871BAF421A6D} = {FC264853-24DF-4E17-BC69-871BAF421A6D}
+		{AB89527E-B1B6-49A4-B3A0-D07948FC23E0} = {AB89527E-B1B6-49A4-B3A0-D07948FC23E0}
+		{9779F796-68BA-4F46-8B6D-BF1F77819C8E} = {9779F796-68BA-4F46-8B6D-BF1F77819C8E}
+		{A0385D99-56DF-45BB-9DB2-1E170B219F5E} = {A0385D99-56DF-45BB-9DB2-1E170B219F5E}
+		{BFB50CA0-87D7-4228-999B-9E2E5CEB38B1} = {BFB50CA0-87D7-4228-999B-9E2E5CEB38B1}
+		{F861DCC5-2BC0-4B8B-8DCD-656A3206E2A0} = {F861DCC5-2BC0-4B8B-8DCD-656A3206E2A0}
+		{497CEAC5-C575-47A7-9230-610D6A3B6A2A} = {497CEAC5-C575-47A7-9230-610D6A3B6A2A}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClearCanvas.Common", "..\Common\ClearCanvas.Common.csproj", "{F6EAD428-E6CF-4DF6-B2F3-D33D532C5343}"
 EndProject
@@ -229,5 +243,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE577284-6B60-46BD-89C1-03677EF73B71}
 	EndGlobalSection
 EndGlobal

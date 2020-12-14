@@ -1063,7 +1063,7 @@
     <EmbeddedResource Include="StudyManagement\Icons\StatToolSmall.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\Common\ClearCanvas.Strings.targets" />
+  <!-- <Import Project="..\Common\ClearCanvas.Strings.targets" /> -->
   <PropertyGroup>
     <PreBuildEvent />
     <PostBuildEvent />

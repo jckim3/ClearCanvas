@@ -43,7 +43,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
-    <DefineConstants>DEBUG;TRACE;UNIT_TESTS</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;UNIT_TESTS</DefineConstants>
     <DebugSymbols>true</DebugSymbols>
     <Optimize>false</Optimize>
     <RegisterForComInterop>false</RegisterForComInterop>
@@ -530,7 +530,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="ClearCanvas.Strings.targets" />
   <PropertyGroup>
     <PreBuildEvent />
     <PostBuildEvent />
