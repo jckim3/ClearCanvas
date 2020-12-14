@@ -122,7 +122,7 @@ namespace ClearCanvas.Desktop.Help
             this._manifest.AutoSize = true;
             this._manifest.BackColor = System.Drawing.Color.Transparent;
             this._manifest.ForeColor = System.Drawing.Color.Firebrick;
-            this._manifest.Location = new System.Drawing.Point(408, 340);
+            this._manifest.Location = new System.Drawing.Point(407, 332);
             this._manifest.Name = "_manifest";
             this._manifest.Size = new System.Drawing.Size(251, 13);
             this._manifest.TabIndex = 7;

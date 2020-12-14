@@ -28,7 +28,7 @@ using System;
 using System.IO;
 using System.Linq;
 using ClearCanvas.Common;
-//using ClearCanvas.Common.Utilities.Tests;
+using ClearCanvas.Common.Utilities.Tests;
 using NUnit.Framework;
 
 namespace ClearCanvas.Dicom.IO.Tests

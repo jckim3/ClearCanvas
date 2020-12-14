@@ -26,7 +26,6 @@ using System;
 using System.Windows.Forms;
 using ClearCanvas.Common;
 using ClearCanvas.Desktop.View.WinForms;
-
 namespace ClearCanvas.Desktop.Executable
 {
 	internal class Program
@@ -44,6 +43,7 @@ namespace ClearCanvas.Desktop.Executable
 
 #if !MONO
 			SplashScreenManager.DisplaySplashScreen();
+			Platform.Log(LogLevel.Info, "JRXStart");
 #endif
 			Platform.PluginManager.PluginLoaded += new EventHandler<PluginLoadedEventArgs>(OnPluginProgress);
 

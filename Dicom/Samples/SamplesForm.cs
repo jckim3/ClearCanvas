@@ -61,7 +61,7 @@ namespace ClearCanvas.Dicom.Samples
         {
 			InitializeComponent();
             _buttonStorageScuVerify.Text = STR_Verify;
-         
+            //string st = Properties.Settings.Default.ScpAETitle;
             if (String.IsNullOrEmpty(Properties.Settings.Default.ScpStorageFolder))
             {
                 Properties.Settings.Default.ScpStorageFolder = Path.Combine(Path.GetTempPath(), "DicomImages");
@@ -69,15 +69,19 @@ namespace ClearCanvas.Dicom.Samples
 
 			_destinationSyntaxCombo.Items.Clear();
 			_destinationSyntaxCombo.Items.Add(TransferSyntax.ExplicitVrLittleEndian);
-			foreach (TransferSyntax syntax in DicomCodecRegistry.GetCodecTransferSyntaxes())
-				_destinationSyntaxCombo.Items.Add(syntax);
 
-        	ComboBoxQueryScuQueryTypeSelectedIndexChanged(null, null);
+            //TransferSyntax syntax_1 = DicomCodecRegistry.GetCodecTransferSyntaxes()[0];
+            
+            foreach (TransferSyntax syntax in DicomCodecRegistry.GetCodecTransferSyntaxes())
+                _destinationSyntaxCombo.Items.Add(syntax);
+
+            ComboBoxQueryScuQueryTypeSelectedIndexChanged(null, null);
             ComboBoxMoveScuQueryTypeSelectedIndexChanged(null, null);
 
             // Logging stuff
             Closing += SamplesFormClosing;
             BasicConfigurator.Configure(_appender);
+            
             _timer = new Timer(delegate
             {
                 try

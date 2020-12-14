@@ -34,8 +34,8 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ClearCanvas Inc.")]
-[assembly: AssemblyProduct("ClearCanvas Workstation")]
-[assembly: AssemblyCopyright("Copyright (c) 2013")]
+[assembly: AssemblyProduct("ClearCanvas Workstation (Modified by JRX)")]
+[assembly: AssemblyCopyright("Copyright (c) 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]		
 

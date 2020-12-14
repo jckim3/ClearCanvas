@@ -99,7 +99,12 @@
       <HintPath>..\..\..\WINDOWS\Microsoft.NET\Framework\v3.0\Windows Communication Foundation\System.ServiceModel.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Common\ClearCanvas.Common.csproj">
+      <Project>{f6ead428-e6cf-4df6-b2f3-d33d532c5343}</Project>
+      <Name>ClearCanvas.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="Audit\AuditedInstances.cs" />
     <Compile Include="Audit\AuditLogHelper.cs" />
@@ -377,12 +382,6 @@
     <Compile Include="TransferSyntax.cs" />
     <Compile Include="TransferSyntaxes.cs" />
     <Compile Include="Iod\Window.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Common\ClearCanvas.Common.csproj">
-      <Project>{F6EAD428-E6CF-4DF6-B2F3-D33D532C5343}</Project>
-      <Name>ClearCanvas.Common</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Network\SR.resx">

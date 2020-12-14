@@ -126,6 +126,9 @@ namespace ClearCanvas.Desktop.View.WinForms
 
 			var assemblyName = SplashScreenSettings.Default.BackgroundImageAssemblyName;
 			var resourceName = SplashScreenSettings.Default.BackgroundImageResourceName;
+			//bool t1 = string.IsNullOrEmpty(assemblyName);
+			//bool t2 = string.IsNullOrEmpty(resourceName);
+
 			if (!string.IsNullOrEmpty(assemblyName) && !string.IsNullOrEmpty(resourceName))
 			{
 				var assembly = Assembly.Load(assemblyName);
