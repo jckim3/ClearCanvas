@@ -70,12 +70,8 @@ namespace ClearCanvas.Dicom.Samples
 			_destinationSyntaxCombo.Items.Clear();
 			_destinationSyntaxCombo.Items.Add(TransferSyntax.ExplicitVrLittleEndian);
 
-            TransferSyntax ImplicitVrLittleEndian = null;
-            //TransferSyntax syntax = DeflatedExplicitVrLittleEndian;
-            TransferSyntax syntax = ImplicitVrLittleEndian;
-
-            //foreach (TransferSyntax syntax in DicomCodecRegistry.GetCodecTransferSyntaxes())
-            //    _destinationSyntaxCombo.Items.Add(syntax);
+            foreach (TransferSyntax syntax in DicomCodecRegistry.GetCodecTransferSyntaxes())
+                _destinationSyntaxCombo.Items.Add(syntax);
 
             ComboBoxQueryScuQueryTypeSelectedIndexChanged(null, null);
             ComboBoxMoveScuQueryTypeSelectedIndexChanged(null, null);
