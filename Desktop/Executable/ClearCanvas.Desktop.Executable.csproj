@@ -138,6 +138,10 @@
       <Name>ClearCanvas.Common</Name>
       <Private>False</Private>
     </ProjectReference>
+    <ProjectReference Include="..\..\Utilities\Manifest\ClearCanvas.Utilities.Manifest.csproj">
+      <Project>{e2f1a5d4-73a4-4ba6-aa5a-87bbdec727f8}</Project>
+      <Name>ClearCanvas.Utilities.Manifest</Name>
+    </ProjectReference>
     <ProjectReference Include="..\View\WinForms\ClearCanvas.Desktop.View.WinForms.csproj">
       <Project>{BB434EC3-A580-4744-A635-A2B4029C66DE}</Project>
       <Name>ClearCanvas.Desktop.View.WinForms</Name>
