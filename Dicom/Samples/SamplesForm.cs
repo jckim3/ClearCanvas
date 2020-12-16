@@ -70,10 +70,12 @@ namespace ClearCanvas.Dicom.Samples
 			_destinationSyntaxCombo.Items.Clear();
 			_destinationSyntaxCombo.Items.Add(TransferSyntax.ExplicitVrLittleEndian);
 
-            //TransferSyntax syntax_1 = DicomCodecRegistry.GetCodecTransferSyntaxes()[0];
-            
-            foreach (TransferSyntax syntax in DicomCodecRegistry.GetCodecTransferSyntaxes())
-                _destinationSyntaxCombo.Items.Add(syntax);
+            TransferSyntax ImplicitVrLittleEndian = null;
+            //TransferSyntax syntax = DeflatedExplicitVrLittleEndian;
+            TransferSyntax syntax = ImplicitVrLittleEndian;
+
+            //foreach (TransferSyntax syntax in DicomCodecRegistry.GetCodecTransferSyntaxes())
+            //    _destinationSyntaxCombo.Items.Add(syntax);
 
             ComboBoxQueryScuQueryTypeSelectedIndexChanged(null, null);
             ComboBoxMoveScuQueryTypeSelectedIndexChanged(null, null);
@@ -81,7 +83,7 @@ namespace ClearCanvas.Dicom.Samples
             // Logging stuff
             Closing += SamplesFormClosing;
             BasicConfigurator.Configure(_appender);
-            
+
             _timer = new Timer(delegate
             {
                 try
@@ -113,7 +115,7 @@ namespace ClearCanvas.Dicom.Samples
                 }
                 catch (Exception x)
                 {
-                    Platform.Log(LogLevel.Error,x,"Unexpected exception with logging event");
+                    Platform.Log(LogLevel.Error, x, "Unexpected exception with logging event");
                 }
             }, null, 500);
             _timer.Start();
@@ -298,7 +300,9 @@ namespace ClearCanvas.Dicom.Samples
 
     	private Compression _compression;
 
-		private void OpenFileButtonClick(object sender, EventArgs e)
+        public TransferSyntax DeflatedExplicitVrLittleEndian { get; }
+
+        private void OpenFileButtonClick(object sender, EventArgs e)
 		{
 			openFileDialogStorageScu.Multiselect = false;
 			openFileDialogStorageScu.Filter = "DICOM files|*.dcm|All files|*.*";

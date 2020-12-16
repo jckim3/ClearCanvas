@@ -88,9 +88,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>packages\log4net.2.0.12\lib\net40\log4net.dll</HintPath>
-    </Reference>
     <Reference Include="NMock2, Version=1.0.2313.18049, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\ReferencedAssemblies\NMock2.dll</HintPath>
@@ -927,7 +924,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>InputManagementSettings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="packages.config" />
     <None Include="RoiGraphics\RoiSettings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>RoiSettings.Designer.cs</LastGenOutput>

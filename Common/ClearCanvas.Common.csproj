@@ -87,8 +87,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\ImageViewer\packages\log4net.2.0.12\lib\net40\log4net.dll</HintPath>
+    <Reference Include="log4net">
+      <HintPath>..\..\ReferencedAssemblies\log4net\net\4.0\release\log4net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -489,7 +489,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>LicenseSettings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="packages.config" />
     <None Include="ProductSettings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>ProductSettings.Designer.cs</LastGenOutput>

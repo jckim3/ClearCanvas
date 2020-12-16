@@ -6,7 +6,7 @@
       <Value Profile="(Default)">StorageSCP</Value>
     </Setting>
     <Setting Name="ScpStorageFolder" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">c:\\Temp</Value>
     </Setting>
     <Setting Name="ScuRemoteAETitle" Type="System.String" Scope="User">
       <Value Profile="(Default)">StorageSCP</Value>

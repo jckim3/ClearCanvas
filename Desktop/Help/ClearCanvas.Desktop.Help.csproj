@@ -87,16 +87,17 @@
       <Project>{f6ead428-e6cf-4df6-b2f3-d33d532c5343}</Project>
       <Name>ClearCanvas.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Utilities\Manifest\ClearCanvas.Utilities.Manifest.csproj">
-      <Project>{E2F1A5D4-73A4-4BA6-AA5A-87BBDEC727F8}</Project>
-      <Name>ClearCanvas.Utilities.Manifest</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ClearCanvas.Desktop.csproj">
       <Project>{26E9A01A-64B5-42C5-8252-FBB30DF9CEC7}</Project>
       <Name>ClearCanvas.Desktop</Name>
     </ProjectReference>
+    <Reference Include="ClearCanvas.Utilities.Manifest, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utilities\Manifest\bin\Debug\ClearCanvas.Utilities.Manifest.dll</HintPath>
+    </Reference>
     <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\..\ImageViewer\packages\log4net.2.0.12\lib\net40\log4net.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ReferencedAssemblies\log4net\net\4.0\release\log4net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -169,7 +170,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>HelpSettings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

@@ -55,12 +55,13 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ClearCanvas.Utilities.Manifest, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Utilities\Manifest\bin\Debug\ClearCanvas.Utilities.Manifest.dll</HintPath>
+    </Reference>
     <Reference Include="DotNetMagic2005, Version=5.2.2.0, Culture=neutral, PublicKeyToken=6cf6edec59e036ec, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\ReferencedAssemblies\DotNetMagic2005.DLL</HintPath>
-    </Reference>
-    <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\..\..\ImageViewer\packages\log4net.2.0.12\lib\net40\log4net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -628,10 +629,6 @@
       <Project>{F6EAD428-E6CF-4DF6-B2F3-D33D532C5343}</Project>
       <Name>ClearCanvas.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Utilities\Manifest\ClearCanvas.Utilities.Manifest.csproj">
-      <Project>{E2F1A5D4-73A4-4BA6-AA5A-87BBDEC727F8}</Project>
-      <Name>ClearCanvas.Utilities.Manifest</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\ClearCanvas.Desktop.csproj">
       <Project>{26E9A01A-64B5-42C5-8252-FBB30DF9CEC7}</Project>
       <Name>ClearCanvas.Desktop</Name>
@@ -643,7 +640,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>DesktopViewSettings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="packages.config" />
     <None Include="Resources\Stop.gif" />
   </ItemGroup>
   <ItemGroup>

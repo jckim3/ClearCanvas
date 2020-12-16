@@ -63,8 +63,8 @@
     <Reference Include="ClearCanvas.Utilities.Manifest">
       <HintPath>..\Utilities\Manifest\bin\Debug\ClearCanvas.Utilities.Manifest.dll</HintPath>
     </Reference>
-    <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\ImageViewer\packages\log4net.2.0.12\lib\net40\log4net.dll</HintPath>
+    <Reference Include="log4net">
+      <HintPath>..\..\ReferencedAssemblies\log4net\net\4.0\release\log4net.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework, Version=2.2.7.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -517,7 +517,6 @@
       <LastGenOutput>LocaleSettings.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="packages.config" />
     <None Include="ToolStripSettings.settings">
       <Generator>PublicSettingsSingleFileGenerator</Generator>
       <LastGenOutput>ToolStripSettings.Designer.cs</LastGenOutput>

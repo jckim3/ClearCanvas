@@ -37,7 +37,7 @@ namespace ClearCanvas.Dicom.Samples.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("c:\\\\Temp")]
         public string ScpStorageFolder {
             get {
                 return ((string)(this["ScpStorageFolder"]));
