@@ -60,9 +60,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ClearCanvas.Utilities.Manifest">
-      <HintPath>..\Utilities\Manifest\bin\Debug\ClearCanvas.Utilities.Manifest.dll</HintPath>
-    </Reference>
     <Reference Include="log4net">
       <HintPath>..\..\ReferencedAssemblies\log4net\net\4.0\release\log4net.dll</HintPath>
     </Reference>
@@ -476,6 +473,10 @@
     <ProjectReference Include="..\Common\ClearCanvas.Common.csproj">
       <Project>{f6ead428-e6cf-4df6-b2f3-d33d532c5343}</Project>
       <Name>ClearCanvas.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Manifest\ClearCanvas.Utilities.Manifest.csproj">
+      <Project>{e2f1a5d4-73a4-4ba6-aa5a-87bbdec727f8}</Project>
+      <Name>ClearCanvas.Utilities.Manifest</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
